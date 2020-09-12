@@ -12,7 +12,7 @@
 ### Язык, ОС, основные используемые библиотеки
 С++  
 Linux  
-sys, fcntl, termios
+sys.h, fcntl.h, termios.h
 
 
 Проект завершен

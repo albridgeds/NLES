@@ -1,10 +1,7 @@
-# Рабочие проекты
+Ground uplink station (GUS) monitoring & control software
 
-В этом репозитории содержатся проекты, выполненные в ходе работы по созданию земной станции спутниковой связи (ЗССС)
-
-
-| Проект             | Краткое описание   | Язык, основные библиотеки |
+| project            | description        | Language, libraries       |
 | :----------------- | :----------------- | :------------------------ |
-| siggen | Управление работой генератора навигационного сигнала (Linux, СОМ-порт, бинарный протокол) | С++: sys.h, fcntl.h, termios.h |
-| kzik_loghandler | Обработка лог-файлов создаваемых ПО ЗССС для их последующего анализа и формирования отчета | C++: getopt.h, zlib.h, time.h, math.h |
-| kzik_report | Формирование суточных отчетов о работе оборудования на основе csv-файлов | Python: numpy, pandas, matplotlib, datetime, optparse, paramiko, xml, socket |
+| siggen | navigation signal generator (Novatel WAAS GUS SigGen) management (Linux, COM, original binary protocol) | С++: sys.h, fcntl.h, termios.h |
+| kzik_loghandler | GUS log files processing. Output: csv file. | C++: getopt.h, zlib.h, time.h, math.h |
+| kzik_report | creates dayly reports based on GUS log files. Input: csv; output: png image (signal charachteristics plots and statistics, SDCM data delivery statistics | Python: numpy, pandas, matplotlib, datetime, optparse, paramiko, xml, socket |
